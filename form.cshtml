@@ -1,0 +1,18 @@
+
+@using (Html.BeginForm("auth","loginForm",FormMethod.post))
+{
+@Html.HiddenFor(a=>a.id)
+
+
+<label>Enter user email</lable>
+@Html.TextBoxFor(e=>e.email)
+
+<label>Enter passwaord </label>
+
+@Html.TextBoxFor(p=>e.password)
+
+
+<input type="submit">
+
+	
+}
